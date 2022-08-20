@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyparser.urlencoded({ extended: true }));
 
 //sends index.html
-app.get("/bmicalculator", function (req, res) {
+app.get("/index.html", function (req, res) {
   res.sendFile(__dirname + "/" + "index.html");
 });
 
